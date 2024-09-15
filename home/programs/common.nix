@@ -6,10 +6,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    # archives
-    zip
-    unzip
-    p7zip
     #games
     zeroadPackages.zeroad-unwrapped
     #tailscale UI
@@ -23,36 +19,7 @@
      fish
      # you tube downloader
      yt-dlp
-/*
-    # utils
-    ripgrep
-    yq-go # https://github.com/mikefarah/yq
-    htop
-    # misc
-    libnotify
-    wineWowPackages.wayland
-    xdg-utils
-    graphviz
 
-    # productivity
-    obsidian
-    # IDE
-    insomnia
-
-    # cloud native
-    docker-compose
-    kubectl
-
-    nodejs
-    nodePackages.npm
-    nodePackages.pnpm
-    yarn
-
-    # db related
-    dbeaver-bin
-    mycli
-    pgcli
-    */
 
   ];
 
@@ -86,15 +53,7 @@
     ssh.enable = true;
     aria2.enable = true;
 
-    skim = {
-      enable = true;
-      enableZshIntegration = true;
-      defaultCommand = "rg --files --hidden";
-      changeDirWidgetOptions = [
-        "--preview 'exa --icons --git --color always -T -L 3 {} | head -200'"
-        "--exact"
-      ];
-    };
+
   };
   #services = {};
 

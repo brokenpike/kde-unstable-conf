@@ -63,9 +63,9 @@
     lm_sensors # for `sensors` command
     # minimal screen capture tool, used by i3 blur lock to take a screenshot
     # print screen key is also bound to this tool in i3 config
-    scrot
-    neofetch
-    nnn # terminal file manager
+    #scrot
+    #neofetch
+    #nnn # terminal file manager
   ];
 
   # Enable sound with pipewire.

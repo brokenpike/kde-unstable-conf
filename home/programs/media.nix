@@ -10,11 +10,6 @@
 
   home.packages = with pkgs; [
     # audio control
-    pavucontrol
-    playerctl
-    pulsemixer
-    # images
-    imv
     vlc
   ];
 
@@ -25,6 +20,6 @@
   };
 
   services = {
-    playerctld.enable = true;
+
   };
 }
