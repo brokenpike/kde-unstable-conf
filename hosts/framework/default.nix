@@ -8,7 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ../../modules/system.nix
-      ../../modules/kde.nix
+      #../../modules/kde.nix
+      ../../modules/hyprland.nix
       ./hardware-configuration.nix
     ];
 
